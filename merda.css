@@ -89,7 +89,7 @@ body::before {
     border: 5px solid var(--color-yellow);
     display: block;
     position: relative;
-    width: 310px;
+    width: 340px;
 }
 
 .intro__cta::before {
@@ -216,6 +216,11 @@ body::before {
 }
 
 @media screen and (max-width: 1024px) {
+    body {
+        background-color: var(--color-black);
+        background-image: none;
+    }
+
     .wrapper {
         display: none;
     }
