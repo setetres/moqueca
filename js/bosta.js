@@ -5,6 +5,9 @@
 
 // uses plax.js
 
+if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+
 $(document).ready(function() {
     Preloader.init();
 })
@@ -203,4 +206,6 @@ Imagery = {
 
         $('.background').css('background-size', newTileWidth);
     }
+}
+
 }

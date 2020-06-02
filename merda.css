@@ -59,6 +59,7 @@ body::before {
 .intro {
     border: 15px solid var(--color-black);
     bottom: 0;
+    display: block;
     left: 0;
     overflow: hidden;
     position: absolute;
@@ -204,4 +205,33 @@ body::before {
 #face7 {
     left: 30%;
     top: 7%;
+}
+
+.info-desktop {
+    display: block;
+}
+
+.info-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        display: none;
+    }
+
+    .info-desktop {
+        display: none;
+    }
+
+    .info-mobile {
+        display: block;
+    }
+
+    .intro__inner {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
 }
