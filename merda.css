@@ -1,0 +1,207 @@
+:root {
+    --color-black: black;
+    --color-white: white;
+    --color-green: green;
+    --color-yellow: yellow;
+}
+
+@keyframes background-stripes {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 6px;
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    user-select: none;
+    width: 100%;
+}
+
+body {
+    background-image: url('images/brasil.svg');
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: cover;
+    cursor: none;
+    font-size: 16px;
+}
+
+body::before {
+    animation: background-stripes 600ms linear infinite;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: 6px 6px;
+    bottom: 0;
+    border: 30px solid var(--color-black);
+    content: "";
+    left: 0;
+    opacity: .5;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.intro {
+    border: 15px solid var(--color-black);
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.intro__inner {
+    align-items: center;
+    background-color: black;
+    bottom: 73px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    left: 73px;
+    overflow: hidden;
+    position: absolute;
+    right: 73px;
+    top: 73px;
+    z-index: 100000000;
+}
+
+.intro__cta {
+    border: 5px solid var(--color-yellow);
+    display: block;
+    position: relative;
+    width: 310px;
+}
+
+.intro__cta::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+    width: 100%;
+}
+
+.intro__cta div {
+    display: block;
+    padding: 30px 40px;
+    position: absolute;
+    top: 0;
+}
+
+.intro__cta div p:last-child {
+    margin-bottom: 0;
+}
+
+.intro h1,
+.intro h2 {
+    font-weight: normal;
+}
+
+.intro h1 {
+    margin-top: 0;
+}
+
+.intro__cta span {
+    color: var(--color-green);
+}
+
+.wrapper {
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.background {
+    background-repeat: repeat;
+    height: 150%;
+    left: -300px;
+    position: absolute;
+    position: none;
+    top: 0;
+    width: 150%;
+}
+
+.animated-head {
+    position: absolute;
+    z-index: 2;
+}
+
+.animated-head:hover {
+    filter: grayscale(1);
+}
+
+#background-1 {
+    background-position: 30px;
+}
+
+#background-2 {
+    background-position: 105px center;
+}
+
+#background-3 {
+    background-position: 130px;
+}
+
+#background-4 {
+    background-position: 100px;
+}
+
+#background-5 {
+    background-position: 170px;
+}
+
+#face1 {
+    top: 35%;
+    left: 73%;
+    z-index: 3;
+}
+
+#face2 {
+    top: 65%;
+    left: 3%;
+}
+
+#face3 {
+    top: 10%;
+    left: 17%;
+}
+
+#face4 {
+    left: 61%;
+    top: 14%;
+}
+
+#face5 {
+    left: 43%;
+    top: 54%;
+}
+
+#face6 {
+    left: 84%;
+    top: 7%;
+}
+
+#face7 {
+    left: 30%;
+    top: 7%;
+}
