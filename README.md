@@ -1,7 +1,9 @@
-| [![moqueca](https://setetres.s3.amazonaws.com/setetres.st/img/share-moqueca.png?v=1&raw=true)](http://moqueca.setetres.st) |
-| -------------------------------------------------------------------------------------------------------------------------- |
+# moqueca
 
 [![Github License](https://img.shields.io/github/license/setetres/moqueca.svg?v=13)](https://github.com/setetres/moqueca/blob/master/LICENSE)
+
+| [![moqueca](https://setetres.s3.amazonaws.com/setetres.st/img/share-moqueca.png?v=2&raw=true)](http://moqueca.setetres.st) |
+| -------------------------------------------------------------------------------------------------------------------------- |
 
 ## License
 
